@@ -9,19 +9,33 @@ import SwiftUI
 
 struct ContentView: View {
      
+    @StateObject private var puzzleSolver = PuzzleSolverViewModel()
+
     var body: some View {
         VStack {
-            Button {
-                main()
-            } label: {
-                Text("click")
+            PuzzleBoardView(tiles: puzzleSolver.currentState.tiles)
+
+            if puzzleSolver.isSolving {
+                Text("Solving Step \(puzzleSolver.currentStep + 1)")
+                    .font(.title)
+                    .padding()
+
+                PuzzleBoardView(tiles: puzzleSolver.solutionSteps[puzzleSolver.currentStep].tiles)
+                    .padding()
+
+                Button("Next Step") {
+                    puzzleSolver.nextStep()
+                }
+                .padding()
+            } else {
+                Button("Start Solving") {
+                    puzzleSolver.startSolving()
+                }
+                .padding()
             }
-
-
         }
-        .padding()
-        
     }
+    
 }
 
 #Preview {

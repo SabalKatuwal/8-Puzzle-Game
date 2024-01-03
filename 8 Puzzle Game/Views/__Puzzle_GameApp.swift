@@ -12,6 +12,11 @@ struct __Puzzle_GameApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .background(
+                    Image("textureImage")
+                        .resizable()
+                        .scaledToFill()
+                )
         }
     }
 }

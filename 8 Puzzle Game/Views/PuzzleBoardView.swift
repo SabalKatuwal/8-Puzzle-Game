@@ -25,7 +25,9 @@ struct PuzzleBoardView: View {
             }
         }
         .background(
-            Color(red: 222 / 255, green: 184 / 255, blue: 135 / 255)
+            Image("boardTexture")
+                .resizable()
+                .frame(width: 280, height: 280)
         )
     }
 }

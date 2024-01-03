@@ -82,6 +82,7 @@ struct State: Hashable {
         return cost
     }
     
+    
     // Print the puzzle state
     func printState() {
         for i in 0..<rowsOrCols {

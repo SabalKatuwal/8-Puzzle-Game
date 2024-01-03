@@ -59,13 +59,9 @@
 		A6BED9772B44282B006A4A87 /* 8 Puzzle Game */ = {
 			isa = PBXGroup;
 			children = (
-				A6BED9782B44282B006A4A87 /* __Puzzle_GameApp.swift */,
-				A6BED98A2B454882006A4A87 /* ViewModel.swift */,
-				A6BED98D2B4549C0006A4A87 /* PuzzleBoardView.swift */,
-				A6BED97A2B44282B006A4A87 /* ContentView.swift */,
-				A6BED98F2B454C37006A4A87 /* PuzzleTileView.swift */,
 				A6BED98C2B45499C006A4A87 /* Views */,
-				A6BED9862B4448E9006A4A87 /* GameLogic.swift */,
+				A6BED9922B457977006A4A87 /* ViewModel */,
+				A6BED9912B457969006A4A87 /* Model */,
 				A6BED97C2B44282D006A4A87 /* Assets.xcassets */,
 				A6BED97E2B44282D006A4A87 /* Preview Content */,
 			);
@@ -83,8 +79,28 @@
 		A6BED98C2B45499C006A4A87 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A6BED9782B44282B006A4A87 /* __Puzzle_GameApp.swift */,
+				A6BED97A2B44282B006A4A87 /* ContentView.swift */,
+				A6BED98D2B4549C0006A4A87 /* PuzzleBoardView.swift */,
+				A6BED98F2B454C37006A4A87 /* PuzzleTileView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		A6BED9912B457969006A4A87 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A6BED9862B4448E9006A4A87 /* GameLogic.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A6BED9922B457977006A4A87 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A6BED98A2B454882006A4A87 /* ViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

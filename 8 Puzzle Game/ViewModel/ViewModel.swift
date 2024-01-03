@@ -30,4 +30,15 @@ class PuzzleSolverViewModel: ObservableObject {
             isSolving = false
         }
     }
+    
+    func reset() {
+        currentState = State(rowsOrCols: 3, tiles: [1, 2, 3, 4, 5, 6, 7, 8, 0])
+        solutionSteps = []
+        currentStep = 0
+        isSolving = false
+    }
+    
+    var isPuzzleSolved: Bool {
+        return currentStep == solutionSteps.count - 1
+    }
 }

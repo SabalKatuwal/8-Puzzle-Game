@@ -27,7 +27,8 @@ struct PuzzleBoardView: View {
         .background(
             Image("boardTexture")
                 .resizable()
-                .frame(width: 280, height: 280)
+                .frame(width: 270, height: 270)
+                .clipShape(RoundedRectangle(cornerRadius: 20))
         )
     }
 }

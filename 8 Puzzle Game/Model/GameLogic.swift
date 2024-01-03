@@ -260,7 +260,7 @@ struct PuzzleSolver {
 // Main function for testing
 func main() {
     let goalState = State(rowsOrCols: 3, tiles: [1, 2, 3, 4, 5, 6, 7, 8, 0])
-    let startState = State(rowsOrCols: 3, tiles: [3, 7, 8, 2, 0, 6, 4, 5, 1])
+    let startState = State(rowsOrCols: 3, tiles: [0, 7, 8, 5, 3, 6, 4, 1, 2])
 
     let puzzleResult = PuzzleSolver.aStar(initialState: startState, goalState: goalState)
 

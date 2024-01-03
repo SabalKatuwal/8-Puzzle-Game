@@ -23,6 +23,7 @@ struct PuzzleTileView: View {
                         .foregroundStyle(Color.blue)
                 }
             }
+            .clipShape(RoundedRectangle(cornerRadius: 20))
             .opacity(value == 0 ? 0 : 1)
             
         

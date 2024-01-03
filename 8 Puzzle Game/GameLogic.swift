@@ -44,7 +44,7 @@ struct State: Hashable {
     
     // Find the index of the empty slot
     func findZeroIndex() -> Int {
-        return tiles.firstIndex(of: 0) ?? tiles.count
+        return tiles.firstIndex(of: 0) ?? tiles.count      // searches for the first occurrence of the value 0 in the array and returns its index
     }
     
     // Randomize the state

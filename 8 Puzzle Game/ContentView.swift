@@ -17,9 +17,10 @@ struct ContentView: View {
                 Text("click")
             }
 
-            
+
         }
         .padding()
+        
     }
 }
 

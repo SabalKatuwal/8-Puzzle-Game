@@ -49,6 +49,7 @@ struct ContentView: View {
                     )
                 } else {
                     Button(action: {
+                        main()
                         puzzleSolver.startSolving()
 
                         // Use Timer to automatically advance steps every 1 seconds

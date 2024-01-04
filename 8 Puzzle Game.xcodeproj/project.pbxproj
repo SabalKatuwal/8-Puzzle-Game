@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A664A09C2B46734A009D72E9 /* DFSGameLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A664A09B2B46734A009D72E9 /* DFSGameLogic.swift */; };
+		A664A09E2B467428009D72E9 /* DFSViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A664A09D2B467428009D72E9 /* DFSViewModel.swift */; };
+		A664A0A02B46758C009D72E9 /* DFSGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A664A09F2B46758C009D72E9 /* DFSGameView.swift */; };
 		A6BED9792B44282B006A4A87 /* __Puzzle_GameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BED9782B44282B006A4A87 /* __Puzzle_GameApp.swift */; };
 		A6BED97B2B44282B006A4A87 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BED97A2B44282B006A4A87 /* ContentView.swift */; };
 		A6BED97D2B44282D006A4A87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6BED97C2B44282D006A4A87 /* Assets.xcassets */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A664A09B2B46734A009D72E9 /* DFSGameLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFSGameLogic.swift; sourceTree = "<group>"; };
+		A664A09D2B467428009D72E9 /* DFSViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFSViewModel.swift; sourceTree = "<group>"; };
+		A664A09F2B46758C009D72E9 /* DFSGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFSGameView.swift; sourceTree = "<group>"; };
 		A6BED9752B44282B006A4A87 /* 8 Puzzle Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "8 Puzzle Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6BED9782B44282B006A4A87 /* __Puzzle_GameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = __Puzzle_GameApp.swift; sourceTree = "<group>"; };
 		A6BED97A2B44282B006A4A87 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,6 +46,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A664A0A12B468DA9009D72E9 /* DFS Solver */ = {
+			isa = PBXGroup;
+			children = (
+				A664A09F2B46758C009D72E9 /* DFSGameView.swift */,
+				A664A09D2B467428009D72E9 /* DFSViewModel.swift */,
+				A664A09B2B46734A009D72E9 /* DFSGameLogic.swift */,
+			);
+			path = "DFS Solver";
+			sourceTree = "<group>";
+		};
 		A6BED96C2B44282B006A4A87 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +78,7 @@
 				A6BED98C2B45499C006A4A87 /* Views */,
 				A6BED9922B457977006A4A87 /* ViewModel */,
 				A6BED9912B457969006A4A87 /* Model */,
+				A664A0A12B468DA9009D72E9 /* DFS Solver */,
 				A6BED97C2B44282D006A4A87 /* Assets.xcassets */,
 				A6BED97E2B44282D006A4A87 /* Preview Content */,
 			);
@@ -173,11 +190,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A664A0A02B46758C009D72E9 /* DFSGameView.swift in Sources */,
+				A664A09C2B46734A009D72E9 /* DFSGameLogic.swift in Sources */,
 				A6BED98B2B454882006A4A87 /* ViewModel.swift in Sources */,
 				A6BED97B2B44282B006A4A87 /* ContentView.swift in Sources */,
 				A6BED98E2B4549C0006A4A87 /* PuzzleBoardView.swift in Sources */,
 				A6BED9792B44282B006A4A87 /* __Puzzle_GameApp.swift in Sources */,
 				A6BED9902B454C37006A4A87 /* PuzzleTileView.swift in Sources */,
+				A664A09E2B467428009D72E9 /* DFSViewModel.swift in Sources */,
 				A6BED9872B4448E9006A4A87 /* GameLogic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

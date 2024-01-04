@@ -14,8 +14,8 @@ class PuzzleSolverViewModel: ObservableObject {
     @Published var currentStep = 0
 
     init() {
-        currentState = State(rowsOrCols: 3, tiles: [3, 7, 8, 2, 0, 6, 4, 1, 5])
-        //Another possible config: [3, 1, 2, 4, 5, 6, 7, 8, 0]
+        currentState = State(rowsOrCols: 3, tiles: [3, 1, 2, 4, 5, 6, 7, 8, 0])
+        //Another possible config: [3, 7, 8, 2, 0, 6, 4, 5, 1]
     }
 
     func startSolving() {

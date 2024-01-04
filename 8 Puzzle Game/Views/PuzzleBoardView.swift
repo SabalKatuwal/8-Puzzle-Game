@@ -14,9 +14,9 @@ struct PuzzleBoardView: View {
 
     var body: some View {
         VStack(spacing: 0) {
-            ForEach(0..<rowsOrCols) { row in
+            ForEach(0..<3) { row in
                 HStack(spacing: 0) {
-                    ForEach(0..<self.rowsOrCols) { col in
+                    ForEach(0..<3) { col in
                         withAnimation(.easeInOut) {
                             PuzzleTileView(value: self.tiles[row * self.rowsOrCols + col])
                         }
